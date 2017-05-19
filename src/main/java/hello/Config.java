@@ -22,9 +22,9 @@ public class Config{
    public DataSource dataSource(){
       DriverManagerDataSource dataSource = new DriverManagerDataSource();
       dataSource.setDriverClassName("org.postgresql.Driver");
-      dataSource.setUrl("jdbc:postgresql://stampy.db.elephantsql.com:5432/jqxminmt");
-      dataSource.setUsername( "jqxminmt" );
-      dataSource.setPassword( "0sRq4bcIzDrj4jDsM2XQ8JCRjxkWT2Vf" );
+      dataSource.setUrl("URL");
+      dataSource.setUsername( "USER" );
+      dataSource.setPassword( "PASS" );
       return dataSource;
    }
 }
