@@ -18,10 +18,7 @@ public class GreetingController {
     	repository.save(new Person("Polchlopek", "Mateusz", "Jaslo"));
 		model.addAttribute("table", repository.findAll());
 		model.addAttribute("table2", repository.findBylname("Nowak"));
-		Person p = repository.findOneBylname("Kowal");
-		p.setFname("Ktos");
-		p.setLname("Inny");
-		model.addAttribute("table3", repository.findAll());
+		model.addAttribute("table3", repository.findByFnameAndLname("Krzysztof","Kowal"));
         return "greeting";
     }
 }

@@ -24,7 +24,7 @@
    </tr>  
    </c:forEach>  
    </table>
-      <h2>Edit Person</h2>  
+      <h2>findByFnameAndLname("Krzysztof","Kowal")</h2>  
    <table border="2" width="70%" cellpadding="2">  
 <tr><th>Id</th><th>First Name</th><th>Last Name</th><th>City</th>
    <c:forEach var="person" items="${table3}">   
